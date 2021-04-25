@@ -4,6 +4,9 @@
 
 <html lang="en">
 <head runat="server">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
@@ -11,11 +14,12 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
+
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body style=" background: url(images/show%20wallpaper.jpg); background-size: cover; background-attachment:fixed; background-position:center; background-repeat:no-repeat  ">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -49,9 +53,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><asp:LinkButton ID="LinkButton1" runat="server" href="HomePage.aspx">Home</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx">Inventory</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx">About Us</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li>                       
                     </ul>
                     <p class="nav navbar-text navbar-right">Hello, <asp:LoginName runat="server" />!</p>
                 </div>
