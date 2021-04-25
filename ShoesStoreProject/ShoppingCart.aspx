@@ -6,4 +6,5 @@
         <p><a href="ShoeInventory.aspx" class="btn btn-primary btn-lg"> Continue Shopping &raquo;</a></p>
     </div>
 
+    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
 </asp:Content>
