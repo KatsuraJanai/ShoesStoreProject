@@ -9,7 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - EliteKicks
+    </title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -49,14 +50,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">EliteKicks</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><asp:LinkButton ID="LinkButton1" runat="server" href="HomePage.aspx">Home</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx">Inventory</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx">About Us</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li>                       
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
+                        <li><asp:LinkButton ID="LinkButton5" runat="server">Shopping Cart</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton6" runat="server">Customer Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton7" runat="server">Admin Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton8" runat="server">Customer SignUp</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton9" runat="server">Customer Login</asp:LinkButton></li>
+
                     </ul>
                     <p class="nav navbar-text navbar-right">Hello, <asp:LoginName runat="server" />!</p>
                 </div>
@@ -67,7 +74,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - EliteKicks</p>
             </footer>
         </div>
 
