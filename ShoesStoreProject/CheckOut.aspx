@@ -3,7 +3,7 @@
 
      <div class="jumbotron" style="background-color: #eeeeee6e">
         <h1>Order Checkout</h1>
-        <p class="lead">Finalize order payments here</p>
+        <p class="lead">Input order information here</p>
     </div>
 
      <div class="container">
