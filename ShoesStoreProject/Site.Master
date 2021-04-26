@@ -51,26 +51,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">EliteKicks</a>
+                    <a class="navbar-brand" runat="server" href="HomePage.aspx">EliteKicks</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><asp:LinkButton ID="LinkButton1" runat="server" href="HomePage.aspx">Home</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx">Inventory</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx">About Us</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
+                        <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx" Visible="False">About Us</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx" Visible="False">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
                         <li><asp:LinkButton ID="LinkButton5" runat="server">Shopping Cart</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton6" runat="server">Customer Login</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton7" runat="server">Admin Login</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton8" runat="server">Customer SignUp</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton9" runat="server">Customer Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton8" runat="server" Visible="False">Customer SignUp</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton10" runat="server">Orders</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton11" runat="server">Update Customer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton11" runat="server" Visible="False">Update Customer</asp:LinkButton></li>
                     </ul>
                     <p class="nav navbar-text navbar-right">Hello, <asp:LoginName runat="server" />!</p>
                 </div>
             </div>
         </div>
+        <br />
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
