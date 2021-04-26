@@ -131,6 +131,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\187203-middle.png" />
     <Content Include="images\Airmax.png" />
     <Content Include="images\Gucci.jpg" />
     <Content Include="images\jordan.jpg" />
