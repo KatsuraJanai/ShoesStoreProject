@@ -9,9 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - EliteKicks
-    </title>
-
+    <title><%: Page.Title %> - EliteKicks </title>
+   
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -19,6 +18,7 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="CSS/myStyleSheet.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
 
 </head>
 <body style=" background: url(images/show%20wallpaper.jpg); background-size: cover; background-attachment:fixed; background-position:center; background-repeat:no-repeat  ">
@@ -55,12 +55,12 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx">Inventory</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="ShoeInventory.aspx">Inventory</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx" Visible="False">About Us</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx" Visible="False">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
-                        <li><asp:LinkButton ID="LinkButton5" runat="server">Shopping Cart</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton6" runat="server">Customer Login</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton7" runat="server">Admin Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton5" runat="server" href="ShoppingCart.aspx">Shopping Cart</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton6" runat="server" href="CustomerLogin.aspx">Customer Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton7" runat="server" href="AdminLogin.aspx">Admin Login</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton8" runat="server" Visible="False">Customer SignUp</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton10" runat="server">Orders</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton11" runat="server" Visible="False">Update Customer</asp:LinkButton></li>
@@ -75,7 +75,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - EliteKicks</p>
+                <p style="color: #FFFFFF">&copy; <%: DateTime.Now.Year %> - EliteKicks</p>
             </footer>
         </div>
 

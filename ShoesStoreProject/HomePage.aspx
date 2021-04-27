@@ -2,41 +2,72 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
+    <div class="jumbotron" style="background-color: #eeeeee6e">
         <h1>EliteKicks</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p class="lead">Check out our shoes here</p>
+        <p><a href="ShoeInventory.aspx" class="btn btn-primary btn-lg">View Shoes &raquo;</a></p>
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="d-block w-100" src="images/carousel1.jpg" alt="NIKE">
     </div>
+
+    <div class="item">
+      <img class="d-block w-100" src="images/carousel2.jpg" alt="Converse">
+    </div>
+
+    <div class="item">
+      <img class="d-block w-100" src="images/last%20one.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <br />
+
+  
+    <div class="container-fluid">
+     <h2 style="color: #FFFFFF"> Shoe Brands </h2>
+    <div class="row" style="color: #c0c0c0">
+        <div class="col-md-4">
+            <div class="container">
+                 <h2 style="color: #FFFFFF">Nike</h2>
+                  <img src="images/nG.gif" class="img-thumbnail" alt="nike" width="304" height="236" style="background-color: #ffffff00; border-top-color: #ffffff00; border-right-color: #ffffff00; border-bottom-color: #ffffff00; border-left-color: #ffffff00;"/> 
+            </div>
+        </div>
+
+        <div class="col-md-4">
+             <div class="container">
+                 <h2 style="color: #FFFFFF">Adidas</h2>
+                  <img src="images/Ag.gif" class="img-thumbnail" alt="adidas" width="304" height="300" style="background-color: #ffffff00; border-top-color: #ffffff00; border-right-color: #ffffff00; border-bottom-color: #ffffff00; border-left-color: #ffffff00;"/> 
+             </div>
+           
+        </div>
+        <div class="col-md-4">
+             <div class="container">
+                 <h2 style="color: #FFFFFF">Jordan</h2>
+                 <img src="images/Jg.gif" class="img-thumbnail" alt="Jordan" width="304" height="236" style="background-color: #ffffff00; border-top-color: #ffffff00; border-right-color: #ffffff00; border-bottom-color: #ffffff00; border-left-color: #ffffff00;"/>
+             </div>
+        </div>
+     </div>
+   </div>
 
 </asp:Content>
