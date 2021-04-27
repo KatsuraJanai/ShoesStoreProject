@@ -55,17 +55,19 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx">Inventory</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx" Visible="False">About Us</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx" Visible="False">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
-                        <li><asp:LinkButton ID="LinkButton5" runat="server">Shopping Cart</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton6" runat="server">Customer Login</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton7" runat="server">Admin Login</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton8" runat="server" Visible="False">Customer SignUp</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="LinkButton10" runat="server">Orders</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx" Visible="False">Inventory</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx">About Us</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
+                        <li><asp:LinkButton ID="LinkButton5" runat="server" href="ShoppingCart.aspx">Shopping Cart</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton6" runat="server" href="CustomerLogin.aspx" >Customer Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton7" runat="server" href="AdminLogin.aspx">Admin Login</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton8" runat="server" href="CustomerSignUp.aspx" Visible="True">Customer SignUp</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton10" runat="server" href="OrderPage.aspx" Visible="False">Orders</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton11" runat="server" Visible="False">Update Customer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton12" runat="server" Visible="False">Logout</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton13" runat="server" Visible="False">Hello User</asp:LinkButton></li>
                     </ul>
-                    <p class="nav navbar-text navbar-right">Hello, <asp:LoginName runat="server" />!</p>
+                   
                 </div>
             </div>
         </div>

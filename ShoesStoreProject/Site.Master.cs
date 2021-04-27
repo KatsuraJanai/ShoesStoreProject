@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,9 +10,55 @@ namespace ShoesStoreProject
 {
     public partial class SiteMaster : MasterPage
     {
+        string strcon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                string sessionRole = Session["role"] as string;
 
+                if (string.IsNullOrEmpty(sessionRole))
+                {
+                    
+                    LinkButton2.Visible = false; // Inventory link button
+                    LinkButton10.Visible = false; // Orders link button
+                    LinkButton11.Visible = false; // update customer link button
+
+
+                }
+                else if (Session["role"].Equals("user"))
+                {
+                    
+                    LinkButton2.Visible = false; //  Inventory link button
+                    LinkButton6.Visible = false; // Customer login link button
+                    LinkButton7.Visible = false; // admin login link button
+                    LinkButton8.Visible = false; // customer signup link button
+                    LinkButton10.Visible = true; // orders signup link button
+                    LinkButton11.Visible = false; // update customer link button
+                    LinkButton12.Visible = true; // logout link button
+
+                    LinkButton13.Visible = true; // hello user link button
+                    //LinkButton13.Text = "Hello " + Session["FirstName"].ToString();
+
+
+                }
+                else if (Session["role"].Equals("admin"))
+                {
+                    
+                    LinkButton2.Visible = false; // sign up link button
+
+                    LinkButton3.Visible = true; // logout link button
+                    LinkButton7.Visible = true; // hello user link button
+                    //LinkButton7.Text = "Hello " + Session["FirstName"].ToString();
+                    LinkButton5.Visible = true; // Product management link button
+                    LinkButton6.Visible = true; // User management link button
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
