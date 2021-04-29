@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="ShoesStoreProject.AdminLogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    
      <div class ="Container">
-         <div class="Row">
             <div class="col-md-6 mx-auto" >
                 <div class="card" style="background-color: #eeeeee6e">
                      <div class="card-body">
@@ -48,7 +48,7 @@
                 <a href="default.aspx"><<< Back to Home Page</a>
                 <br />
                </div>
-            </div>
          </div>
+    
 
 </asp:Content>

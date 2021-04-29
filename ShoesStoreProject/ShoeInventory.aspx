@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
      <div class="jumbotron" style="background-color: #66000000">
-        <h1>Shoe Inventory</h1>
-        <p class="lead">Buy now while stocks last</p>
+        <h1 style="color: #FFFFFF">Shoe Inventory</h1>
+        <p  style="color: #FFFFFF" class="lead">Buy now while stocks last</p>
     </div>
 
     <div id="PopularBrands" class="container">
