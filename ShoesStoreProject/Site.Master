@@ -55,7 +55,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="Inventory.aspx" Visible="False">Inventory</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton2" runat="server" href="Shoeinventory.aspx">Inventory</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton3" runat="server" href="About.aspx">About Us</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton4" runat="server" href="Contact.aspx">Contact Us &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</asp:LinkButton></li> 
                         <li><asp:LinkButton ID="LinkButton5" runat="server" href="ShoppingCart.aspx">Shopping Cart</asp:LinkButton></li>

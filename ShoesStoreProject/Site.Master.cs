@@ -20,7 +20,7 @@ namespace ShoesStoreProject
                 if (string.IsNullOrEmpty(sessionRole))
                 {
                     
-                    LinkButton2.Visible = false; // Inventory link button
+                    
                     LinkButton10.Visible = false; // Orders link button
                     LinkButton11.Visible = false; // update customer link button
 
@@ -29,7 +29,7 @@ namespace ShoesStoreProject
                 else if (Session["role"].Equals("user"))
                 {
                     
-                    LinkButton2.Visible = false; //  Inventory link button
+                    
                     LinkButton6.Visible = false; // Customer login link button
                     LinkButton7.Visible = false; // admin login link button
                     LinkButton8.Visible = false; // customer signup link button
@@ -45,8 +45,7 @@ namespace ShoesStoreProject
                 else if (Session["role"].Equals("admin"))
                 {
                     
-                    LinkButton2.Visible = false; // sign up link button
-
+                    
                     LinkButton3.Visible = true; // logout link button
                     LinkButton7.Visible = true; // hello user link button
                     //LinkButton7.Text = "Hello " + Session["FirstName"].ToString();
