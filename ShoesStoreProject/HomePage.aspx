@@ -4,6 +4,7 @@
 
     <div class="jumbotron" style="background-color: #eeeeee6e">
         <h1>EliteKicks</h1>
+        <h1><asp:LinkButton ID="LinkButton13" runat="server" Visible="False">Hello User</asp:LinkButton></h1>
         <p class="lead">Check out our shoes here</p>
         <p><a href="ShoeInventory.aspx" class="btn btn-primary btn-lg">View Shoes &raquo;</a></p>
     </div>

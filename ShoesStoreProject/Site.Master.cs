@@ -19,8 +19,8 @@ namespace ShoesStoreProject
 
                 if (string.IsNullOrEmpty(sessionRole))
                 {
-                    
-                    
+
+
                     LinkButton10.Visible = false; // Orders link button
                     LinkButton11.Visible = false; // update customer link button
 
@@ -28,8 +28,8 @@ namespace ShoesStoreProject
                 }
                 else if (Session["role"].Equals("user"))
                 {
-                    
-                    
+
+
                     LinkButton6.Visible = false; // Customer login link button
                     LinkButton7.Visible = false; // admin login link button
                     LinkButton8.Visible = false; // customer signup link button
@@ -37,20 +37,22 @@ namespace ShoesStoreProject
                     LinkButton11.Visible = false; // update customer link button
                     LinkButton12.Visible = true; // logout link button
 
-                    LinkButton13.Visible = true; // hello user link button
-                    //LinkButton13.Text = "Hello " + Session["FirstName"].ToString();
 
 
                 }
                 else if (Session["role"].Equals("admin"))
                 {
-                    
-                    
-                    LinkButton3.Visible = true; // logout link button
-                    LinkButton7.Visible = true; // hello user link button
-                    //LinkButton7.Text = "Hello " + Session["FirstName"].ToString();
-                    LinkButton5.Visible = true; // Product management link button
-                    LinkButton6.Visible = true; // User management link button
+
+
+                    LinkButton6.Visible = false; // Customer login link button
+                    LinkButton7.Visible = false; // admin login link button
+                    LinkButton8.Visible = false; // customer signup link button
+                    LinkButton10.Visible = true; // orders signup link button
+                    LinkButton11.Visible = false; // update customer link button
+                    LinkButton12.Visible = true; // logout link button
+
+                    //LinkButton13.Visible = true; // hello user link button
+                    //LinkButton13.Text = "Hello " + Session["FirstName"].ToString();
 
                 }
             }
@@ -58,6 +60,18 @@ namespace ShoesStoreProject
             {
 
             }
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+
+
+            Session["username"] = "";
+            Session["CustomerID"] = "";
+            Session["role"] = "";
+            Session["status"] = "";
+
+            Response.Redirect("HomePage.aspx");
         }
     }
 }
