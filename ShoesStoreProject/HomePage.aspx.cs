@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,7 +15,42 @@ namespace ShoesStoreProject
         string strcon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            // adding the welcome user --LinkButton13.Text = "Hello " + Session["FirstName"].ToString();
-        }
+
+            try
+            {
+                SqlConnection ConnectionString = new SqlConnection(strcon);
+                if (ConnectionString.State == ConnectionState.Closed)
+                {
+                    ConnectionString.Open();
+
+                }
+                SqlCommand cmd = new SqlCommand("Select * from Customer where CustomerID=@CustomerID", ConnectionString);
+                cmd.Parameters.AddWithValue("@CustomerID", Session["CustomerID"]);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+
+
+                        Session["Customername"] = dr.GetValue(1).ToString();
+                        LinkButton13.Visible = true;
+                        LinkButton13.Text = "Welcome " + Session["Customername"].ToString();
+
+                    }
+
+                }
+                else
+                {
+                    Session["Customername"] = "";
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }   
     }
 }
