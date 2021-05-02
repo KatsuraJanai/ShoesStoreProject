@@ -21,7 +21,7 @@
                     Description: &nbsp Black<br />
                     Price: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $ 470<br />
                 </p>
-                <p><a><asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-primary btn-lg" > Add to cart &raquo;</asp:LinkButton></a></p> 
+                <p><a><asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-primary btn-lg" OnClick="LinkButton1_Click" > Add to cart &raquo;</asp:LinkButton></a></p> 
                 <p><a><asp:DropDownList ID="DropDownList4" runat="server" class="btn btn-primary btn-lg">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
@@ -48,7 +48,7 @@
                     Description: &nbsp Clay<br />
                     Price: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $ 400<br />
                 </p>
-                <p><a><asp:LinkButton ID="LinkButton2" runat="server" class="btn btn-primary btn-lg" > Add to cart &raquo;</asp:LinkButton></a></p> 
+                <p><a><asp:LinkButton ID="LinkButton2" Value="2" runat="server" class="btn btn-primary btn-lg" OnClick="LinkButton2_Click" > Add to cart &raquo;</asp:LinkButton></a></p> 
                 <p><a><asp:DropDownList ID="DropDownList1" runat="server" class="btn btn-primary btn-lg">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
@@ -76,7 +76,7 @@
                     Description: &nbsp Easter White<br />
                     Price: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $ 250<br />
                 </p>
-                <p><a><asp:LinkButton ID="LinkButton3" runat="server" class="btn btn-primary btn-lg" > Add to cart &raquo;</asp:LinkButton></a></p> 
+                <p><a><asp:LinkButton ID="LinkButton3" runat="server" class="btn btn-primary btn-lg" OnClick="LinkButton3_Click" > Add to cart &raquo;</asp:LinkButton></a></p> 
                 <p><a><asp:DropDownList ID="DropDownList2" runat="server" class="btn btn-primary btn-lg">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
@@ -111,7 +111,7 @@
                     Description: &nbsp Black<br />
                     Price: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $ 720<br />
                 </p>
-                <p><a><asp:LinkButton ID="LinkButton4" runat="server" class="btn btn-primary btn-lg" > Add to cart &raquo;</asp:LinkButton></a></p> 
+                <p><a><asp:LinkButton ID="LinkButton4" runat="server" class="btn btn-primary btn-lg" OnClick="LinkButton4_Click" > Add to cart &raquo;</asp:LinkButton></a></p> 
                 <p><a><asp:DropDownList ID="DropDownList3" runat="server" class="btn btn-primary btn-lg">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
@@ -138,7 +138,7 @@
                     Description: &nbsp Black<br />
                     Price: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $ 850<br />
                 </p>
-                <p><a><asp:LinkButton ID="LinkButton5" runat="server" class="btn btn-primary btn-lg" > Add to cart &raquo;</asp:LinkButton></a></p> 
+                <p><a><asp:LinkButton ID="LinkButton5" runat="server" class="btn btn-primary btn-lg" OnClick="LinkButton5_Click" > Add to cart &raquo;</asp:LinkButton></a></p> 
                 <p><a><asp:DropDownList ID="DropDownList5" runat="server" class="btn btn-primary btn-lg">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
@@ -166,7 +166,7 @@
                     Description: &nbsp Black<br />
                     Price: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $ 795<br />
                 </p>
-                <p><a><asp:LinkButton ID="LinkButton6" runat="server" class="btn btn-primary btn-lg" > Add to cart &raquo;</asp:LinkButton></a></p> 
+                <p><a><asp:LinkButton ID="LinkButton6" runat="server" class="btn btn-primary btn-lg" OnClick="LinkButton6_Click" > Add to cart &raquo;</asp:LinkButton></a></p> 
                 <p><a><asp:DropDownList ID="DropDownList6" runat="server" class="btn btn-primary btn-lg">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
