@@ -105,7 +105,7 @@
     <Content Include="About.aspx" />
     <Content Include="AdminCustomer.aspx" />
     <Content Include="AdminLogin.aspx" />
-    <Content Include="AdminProducts.aspx" />
+    <Content Include="AdminCardManagement.aspx" />
     <Content Include="App_Data\StoreDB.mdf" />
     <Content Include="App_Data\StoreDB_log.ldf">
       <DependentUpon>StoreDB.mdf</DependentUpon>
@@ -136,6 +136,7 @@
     <Content Include="images\Ag.gif" />
     <Content Include="images\Airmax.png" />
     <Content Include="images\best-sneakers.jpg" />
+    <Content Include="images\card.jpg" />
     <Content Include="images\carousel1.jpg" />
     <Content Include="images\carousel2.jpg" />
     <Content Include="images\Gucci.jpg" />
@@ -205,12 +206,12 @@
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminProducts.aspx.cs">
-      <DependentUpon>AdminProducts.aspx</DependentUpon>
+    <Compile Include="AdminCardManagement.aspx.cs">
+      <DependentUpon>AdminCardManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminProducts.aspx.designer.cs">
-      <DependentUpon>AdminProducts.aspx</DependentUpon>
+    <Compile Include="AdminCardManagement.aspx.designer.cs">
+      <DependentUpon>AdminCardManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

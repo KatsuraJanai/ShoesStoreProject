@@ -64,6 +64,7 @@
                         <li><asp:LinkButton ID="LinkButton8" runat="server" href="CustomerSignUp.aspx" Visible="True">Customer SignUp</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton10" runat="server" href="OrderPage.aspx" Visible="False">Orders</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton11" runat="server" Visible="False">Update Customer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton13" runat="server" Visible="False" href="AdminCardManagement.aspx">>Card Management</asp:LinkButton></li>
                         <li><asp:LinkButton ID="LinkButton12" runat="server" OnClick="LinkButton1_Click" Visible="False">Logout</asp:LinkButton></li>
                         
                     </ul>
