@@ -137,7 +137,7 @@ namespace ShoesStoreProject
                 else
                 {
                     CreateCart();
-                    AddToCart(DropDownList4.Text.Trim(), '2');
+                    AddToCart(DropDownList1.Text.Trim(), '2');
                 }
 
             }
@@ -155,7 +155,7 @@ namespace ShoesStoreProject
                 else
                 {
                     CreateCart();
-                    AddToCart(DropDownList4.Text.Trim(), '3');
+                    AddToCart(DropDownList2.Text.Trim(), '3');
                 }
 
             }
@@ -172,7 +172,7 @@ namespace ShoesStoreProject
                 else
                 {
                     CreateCart();
-                    AddToCart(DropDownList4.Text.Trim(), '4');
+                    AddToCart(DropDownList3.Text.Trim(), '4');
                 }
 
             }
@@ -189,7 +189,7 @@ namespace ShoesStoreProject
                 else
                 {
                     CreateCart();
-                    AddToCart(DropDownList4.Text.Trim(), '5');
+                    AddToCart(DropDownList5.Text.Trim(), '5');
                 }
 
             }
@@ -206,7 +206,7 @@ namespace ShoesStoreProject
                 else
                 {
                     CreateCart();
-                    AddToCart(DropDownList4.Text.Trim(), '6');
+                    AddToCart(DropDownList6.Text.Trim(), '6');
                 }
 
             }

@@ -40,6 +40,7 @@ namespace ShoesStoreProject
                 GetCustomerID(con);
                 CreateAccount();
                 Response.Write("<script>alert('Registered Successfully');</script>");
+                
             }
         }
 

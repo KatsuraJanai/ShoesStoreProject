@@ -29,6 +29,8 @@
                             
                             
                         </Columns>
+
+<RowStyle BackColor="Gray"></RowStyle>
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT CartItem.ProductID, Product.Name, Product.Description, Product.Price, CartItem.Quantity FROM CartItem INNER JOIN Cart ON CartItem.CartID = Cart.CartID INNER JOIN Product ON CartItem.ProductID = Product.ProductID
 WHERE (cartitem.CustomerID = @CustomerID)" DeleteCommand="delete from cartitems

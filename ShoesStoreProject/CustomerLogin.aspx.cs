@@ -44,6 +44,7 @@ namespace ShoesStoreProject
                         Response.Write("<script>alert('login Successful');</script>");
                         Session["CustomerID"] = dr.GetValue(3).ToString();
                         Session["AccountID"] = dr.GetValue(0).ToString();
+                        Session["Username"] = dr.GetValue(1).ToString();
                         Session["role"] = "user";
                     }
                     Response.Redirect("HomePage.aspx");

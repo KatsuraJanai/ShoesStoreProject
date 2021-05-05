@@ -50,8 +50,8 @@ namespace ShoesStoreProject
                     LinkButton10.Visible = true; // orders signup link button
                     LinkButton11.Visible = false; // update customer link button
                     LinkButton12.Visible = true; // logout link button
-
-                    //LinkButton13.Visible = true; // hello user link button
+                    LinkButton13.Visible = true; // card user link button
+                    LinkButton14.Visible = true; // ship link button
                     //LinkButton13.Text = "Hello " + Session["FirstName"].ToString();
 
                 }

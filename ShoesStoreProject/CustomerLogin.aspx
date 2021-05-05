@@ -12,7 +12,7 @@
                          <div class="row">
                                 <div class="col">
                                     <center>
-                                        <img width="150px" src="Images%202/loginicon.png" />"
+                                        <img width="150px" src="Images/loginicon.png"/>
                                     </center>
                                 </div>
                          </div>

@@ -52,6 +52,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -110,7 +116,8 @@
     <Content Include="App_Data\StoreDB_log.ldf">
       <DependentUpon>StoreDB.mdf</DependentUpon>
     </Content>
-    <Content Include="CheckOut.aspx" />
+    <Content Include="images\shipping.jpg" />
+    <Content Include="ShippingManagement.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -137,6 +144,7 @@
     <Content Include="images\Airmax.png" />
     <Content Include="images\best-sneakers.jpg" />
     <Content Include="images\card.jpg" />
+    <Content Include="images\cardout.png" />
     <Content Include="images\carousel1.jpg" />
     <Content Include="images\carousel2.jpg" />
     <Content Include="images\Gucci.jpg" />
@@ -222,12 +230,12 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="CheckOut.aspx.cs">
-      <DependentUpon>CheckOut.aspx</DependentUpon>
+    <Compile Include="ShippingManagement.aspx.cs">
+      <DependentUpon>ShippingManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CheckOut.aspx.designer.cs">
-      <DependentUpon>CheckOut.aspx</DependentUpon>
+    <Compile Include="ShippingManagement.aspx.designer.cs">
+      <DependentUpon>ShippingManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -311,7 +319,9 @@
       <DependentUpon>FinalPayment.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
